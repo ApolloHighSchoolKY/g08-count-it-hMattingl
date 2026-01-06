@@ -1,4 +1,4 @@
-//© A+ Computer Science
+// A+ Computer Science
 // www.apluscompsci.com
 
 //array delete example
@@ -15,7 +15,14 @@ public class ArrayCount
 	{
 		int count=0;
 
+		//for each int we will refer to as x in the array called iRay
+		for(int x: iRay)
+		{
+			//if x is the same value as the val in the method, add one to count 
+			if (x == val)
+				count++;
 
+		}
 
 		return count;
 	}
@@ -23,6 +30,8 @@ public class ArrayCount
 	public static void printIt( int[] iRay  )
 	{
 
+		for(int y: iRay)
+			System.out.print(y + " ");
 
 	}
 
@@ -32,5 +41,6 @@ public class ArrayCount
 
 		printIt( nums );
 		System.out.println("\ncount of 7s == " + countIt( nums, 7 ));
+		System.out.println("\ncount of 8s == " + countIt( nums, 8 ));
 	}
 }
